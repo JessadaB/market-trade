@@ -1,0 +1,16 @@
+{
+  "name": "binance-discord-alert",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Binance Futures Discord alert scanner and status web server.",
+  "main": "alert-bot.js",
+  "scripts": {
+    "start": "node alert-bot.js",
+    "start:dry": "DRY_RUN=1 node alert-bot.js",
+    "scan:dry": "DRY_RUN=1 node alert-bot.js --once",
+    "check": "node --check alert-bot.js && node --check ecosystem.config.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
